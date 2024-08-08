@@ -62,8 +62,8 @@ builder.Services.AddSingleton<Serilog.ILogger>(log);
 #endregion
 
 #region CustomMapper and CustomMediator Implementation
-builder.Services.AddYtMapper();
-builder.Services.AddYtMeditor(AppDomain.CurrentDomain.GetAssemblies());
+//builder.Services.AddYtMapper();
+//builder.Services.AddYtMeditor(AppDomain.CurrentDomain.GetAssemblies());
 #endregion
 
 #region Repository Registration Implementation
@@ -71,29 +71,29 @@ RepositoryServiceRegistration.AddRepositoryRegistration(builder.Services, builde
 #endregion
 
 #region Application Registration Implementation
-builder.Services.AddApplicationRegistration(builder.Configuration);
+//builder.Services.AddApplicationRegistration(builder.Configuration);
 //builder.Services.AddTransactionalDecorators();
 #endregion
 
 #region JWT Implementation
-builder.Services.AddAuthentication(x =>
-{
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(o =>
-{
-    var Key = Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]);
-    o.SaveToken = true;
-    o.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = false,
-        ValidateAudience = false,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["JWT:Issuer"],
-        IssuerSigningKey = new SymmetricSecurityKey(Key)
-    };
-});
+//builder.Services.AddAuthentication(x =>
+//{
+//    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+//    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+//}).AddJwtBearer(o =>
+//{
+//    var Key = Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]);
+//    o.SaveToken = true;
+//    o.TokenValidationParameters = new TokenValidationParameters
+//    {
+//        ValidateIssuer = false,
+//        ValidateAudience = false,
+//        ValidateLifetime = true,
+//        ValidateIssuerSigningKey = true,
+//        ValidIssuer = builder.Configuration["JWT:Issuer"],
+//        IssuerSigningKey = new SymmetricSecurityKey(Key)
+//    };
+//});
 #endregion
 
 builder.Services.AddControllers()
@@ -126,8 +126,8 @@ app.UseMiddleware<LocalizationMiddleware>();
 
 app.UseHttpsRedirection();
 
-app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthentication();
+//app.UseAuthorization();
 
 app.MapControllers();
 

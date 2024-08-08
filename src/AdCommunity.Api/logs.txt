@@ -7649,3 +7649,83 @@ System.ArgumentException: ObjectId is not a valid representation for an Int32Ser
 --- End of stack trace from previous location ---
    at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
    at AdCommunity.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tanyel\Desktop\AdCommunity\AdCommunity\src\AdCommunity.Api\Middlewares\ExceptionMiddleware.cs:line 19
+2024-08-08 21:41:54.000 +08:00 [ERR] An error occurred: Value cannot be null. (Parameter 's')
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions o) in E:\000github\AdCommunity\src\AdCommunity.Api\Program.cs:line 85
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AdCommunity.Api.Middlewares.LocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in E:\000github\AdCommunity\src\AdCommunity.Api\Middlewares\LocalizationMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at AdCommunity.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in E:\000github\AdCommunity\src\AdCommunity.Api\Middlewares\ExceptionMiddleware.cs:line 19
+2024-08-08 21:44:32.469 +08:00 [ERR] An error occurred: Value cannot be null. (Parameter 's')
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions o) in E:\000github\AdCommunity\src\AdCommunity.Api\Program.cs:line 85
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AdCommunity.Api.Middlewares.LocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in E:\000github\AdCommunity\src\AdCommunity.Api\Middlewares\LocalizationMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at AdCommunity.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in E:\000github\AdCommunity\src\AdCommunity.Api\Middlewares\ExceptionMiddleware.cs:line 19
+2024-08-08 21:45:58.899 +08:00 [ERR] An error occurred: Value cannot be null. (Parameter 's')
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions o) in E:\000github\AdCommunity\src\AdCommunity.Api\Program.cs:line 85
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AdCommunity.Api.Middlewares.LocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in E:\000github\AdCommunity\src\AdCommunity.Api\Middlewares\LocalizationMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at AdCommunity.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in E:\000github\AdCommunity\src\AdCommunity.Api\Middlewares\ExceptionMiddleware.cs:line 19
+2024-08-08 21:45:58.957 +08:00 [ERR] An error occurred: Value cannot be null. (Parameter 's')
+System.ArgumentNullException: Value cannot be null. (Parameter 's')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Text.Encoding.GetBytes(String s)
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__2(JwtBearerOptions o) in E:\000github\AdCommunity\src\AdCommunity.Api\Program.cs:line 85
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+--- End of stack trace from previous location ---
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at AdCommunity.Api.Middlewares.LocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in E:\000github\AdCommunity\src\AdCommunity.Api\Middlewares\LocalizationMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at AdCommunity.Api.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in E:\000github\AdCommunity\src\AdCommunity.Api\Middlewares\ExceptionMiddleware.cs:line 19

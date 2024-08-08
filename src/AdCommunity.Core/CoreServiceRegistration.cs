@@ -20,8 +20,10 @@ public static class CoreServiceRegistration
         {
             var cultures = new List<CultureInfo>()
             {
+                
                 new CultureInfo("tr-TR"),
-                new CultureInfo("en-US")
+                new CultureInfo("en-US"),
+                new CultureInfo("zh-CN"),
             };
 
             opt.SupportedCultures = cultures;
